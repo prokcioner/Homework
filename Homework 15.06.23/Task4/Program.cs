@@ -9,14 +9,8 @@ int c = int.Parse(Console.ReadLine());
 
 int max = a;
 
-if (max<b)
-{
- max = b;
-}
+if (max<b) max = b;
 
-if (max<c)
-{
- max = c;
-}
+if (max<c) max = c;
 
 Console.WriteLine($"max = {max}");
