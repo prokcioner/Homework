@@ -21,3 +21,15 @@ Console.Write("Введите цисло: ");
 int numb = int.Parse(Console.ReadLine());
 int result = sum(numb);
 Console.WriteLine($"Сумма цифр в числе равна: {result}");
+
+/*Console.Write("Введите цисло: ");
+string numb = Console.ReadLine();
+
+int sum = 0;
+
+for (int i = 0; i =< numb.Length - 1; i++)
+{
+  sum = sum + numb[i];
+}
+
+Console.WriteLine($"Сумма цифр в числе равна: {sum}");*/
