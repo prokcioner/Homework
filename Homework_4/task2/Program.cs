@@ -3,7 +3,7 @@
 82 -> 10
 9012 -> 12*/
 
-int sum(int num)
+/* int sum(int num)
 {
 int sum = 0;
 int remains = num;
@@ -20,16 +20,16 @@ return sum;
 Console.Write("Введите цисло: ");
 int numb = int.Parse(Console.ReadLine());
 int result = sum(numb);
-Console.WriteLine($"Сумма цифр в числе равна: {result}");
+Console.WriteLine($"Сумма цифр в числе равна: {result}");*/
 
-/*Console.Write("Введите цисло: ");
+Console.Write("Введите цисло: ");
 string numb = Console.ReadLine();
 
 int sum = 0;
 
-for (int i = 0; i =< numb.Length - 1; i++)
+for (int i = 0; i <= numb.Length - 1; i++)
 {
-  sum = sum + numb[i];
+  sum = sum + int.Parse(numb[i].ToString());
 }
 
-Console.WriteLine($"Сумма цифр в числе равна: {sum}");*/
+Console.WriteLine($"Сумма цифр в числе равна: {sum}");
