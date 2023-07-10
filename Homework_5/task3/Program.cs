@@ -6,12 +6,7 @@ double[] newArray(int size, double min, double max)
 double[] array = new double[size];
 for (int i = 0; i < size; i++)
 {
-  array[i] = new Random().NextDouble() * (max - min) + min;
-}
-
-for (int i = 0; i < array.Length; i++)
-{
-  array[i] = Math.Round(array[i], 2);
+  array[i] = Math.Round((new Random().NextDouble() * (max - min) + min), 2);
 }
 
 return array;
@@ -27,9 +22,9 @@ Console.WriteLine($"{array[array.Length - 1]}.");
 
 double DivMaxMin(double[] array)
 {
-  double max = -1;
-  double min = -1;
-for (int i = 0; i < array.Length; i++)
+  double max = array[0];
+  double min = array[0];
+for (int i = 1; i < array.Length; i++)
 {
   if (max < array[i])
   {
@@ -49,7 +44,7 @@ return result;
 
 
 
-double[] array = newArray(10, 0.0, 100.0);
+double[] array = newArray(10, 30.0, 57.0);
 
 printArray(array);
 
