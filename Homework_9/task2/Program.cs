@@ -10,9 +10,7 @@ if (b < a){return 0;}
 else
 {
   return a + sum(a + 1, b);
-
 }
-
 }
 
 System.Console.Write("Введите первое число: ");
